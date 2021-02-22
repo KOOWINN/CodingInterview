@@ -49,7 +49,7 @@ public class Question7 {
         while (startInOder <= endInOrder && inOrder[rootInOrder] != rootValue) {
             rootInOrder++;
         }
-        
+
         int leftLength = rootInOrder - startInOder;
         int leftPreOrderEnd = startPreOrder + leftLength;
         if (leftLength > 0) {
@@ -87,11 +87,5 @@ public class Question7 {
             }
             System.out.print(String.format("%d\t", treeNode.m_nValue));
         }
-    }
-
-    static class BinaryTreeNode{
-        int             m_nValue;
-        BinaryTreeNode  m_pLeft;
-        BinaryTreeNode  m_pRight;
     }
 }
